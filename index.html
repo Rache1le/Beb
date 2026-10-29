@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beb par Rachelle</title>
+  <!-- Linking to the external stylesheet in the css folder -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- WCAG 2.2 Essential: Skip to main content for keyboard users -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <!-- Accessible logo identity -->
+      <div class="logotext">
+        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a>
+        <p class="page-subtitle">par Rachelle</p>
+      </div>
+      
+      <nav role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="wiki.html" class="nav-link">Wiki</a></li>
+          <li><a href="resources.html" class="nav-link">Ressources</a></li>
+          <li><a href="opinions.html" class="nav-link">Avis</a></li>
+          <li><a href="stories.html" class="nav-link">Contes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main landmark for screen readers and target for skip link -->
+  <main id="main-content" class="main-content" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <!-- Reusing the page-header styling from our CSS for consistency -->
+        <header class="page-header" style="border-bottom: none; padding-bottom: 0;">
+          <h1 id="hero-heading" class="page-title" style="max-width: 800px; font-size: 3.5rem;">
+            Bienvenue à <em style="font-style: italic; color: var(--color-accent);">Beb</em>.
+          </h1>
+          <p class="page-subtitle" style="max-width: 650px; font-size: 1.35rem; margin-top: 1.5rem;">
+            Un site ou je partage toutes mes idees, mes connaissances, mes ressources et mes opinions parce que, apparemment, parler de l'accessibilité numérique avec tes amis qui ne sont pas dans le domaine n'est pas si simple. Qui aurait cru ??!
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- Content Hub Grid -->
+    <section class="container" style="padding-top: 2rem;" aria-labelledby="hub-heading">
+      <h2 id="hub-heading" style="font-size: 2.25rem; margin-bottom: 2.5rem; display: flex; align-items: center; gap: 1rem;">
+        Explorer les Quartiers
+        <span style="flex-grow: 1; height: 1px; background: var(--color-border);" aria-hidden="true"></span>
+      </h2>
+      
+      <div class="beb-grid">
+        
+        <!-- Part 1: The Wiki -->
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Blueprint</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Role-Based Wiki</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Tailored accessibility mandates minus the dry jargon. Whether you're a pixel-pushing designer or a production-level engineer, find your specific lane here.</p>
+          </div>
+          <!-- Button links directly to the new wiki page -->
+          <a href="wiki.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Enter Wiki</a>
+        </article>
+
+        <!-- Part 2: Resources -->
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Stash</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Curated Treasures</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">A highly opinionated directory of tools, color contrast crunchers, articles, and bookmarklets that make building an inclusive web actually fun.</p>
+          </div>
+          <!-- Button links directly to the new resources page -->
+          <a href="resources.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Grab Tools</a>
+        </article>
+
+        <!-- Part 3: Opinions -->
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Runway</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Unfiltered Thoughts</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">An ongoing analysis of modern web aesthetics. We love beautiful things, but if your interface isn't navigable by keyboard, we're calling it out.</p>
+          </div>
+          <!-- Button links directly to the new opinions page -->
+          <a href="opinions.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Read Takes</a>
+        </article>
+
+        <!-- Part 4: Stories & Future Games -->
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Theater</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">A11y Tales & Activities</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Immersive, whimsical short stories framing digital barriers as physical adventures. Soon expanding into tabletop workshop modules and interactive games.</p>
+          </div>
+          <!-- Button links directly to the new stories page -->
+          <a href="stories.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Explore Lore</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-wrap">
+      <div>
+        <p> 2026 Beb.</p>
+      </div>
+      <nav aria-label="Footer Navigation" role="navigation">
+        <ul class="footer-nav">
+          <li><a href="#accessibility-statement">Accessibilité</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

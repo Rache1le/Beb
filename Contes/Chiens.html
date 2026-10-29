@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiens | Contes | Beb</title>
+  <!-- Linking to the external stylesheet in the css folder -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- WCAG 2.2 Essential: Skip to main content for keyboard users -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <!-- Accessible logo identity -->
+      <div class="logotext">
+        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a>
+        <p class="page-subtitle">par Rachelle</p>
+      </div>
+      
+      <nav role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="wiki.html" class="nav-link">Wiki</a></li>
+          <li><a href="resources.html" class="nav-link">Ressources</a></li>
+          <li><a href="opinions.html" class="nav-link">Avis</a></li>
+          <li><a href="stories.html" class="nav-link">Contes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main role="main" id="main-content" class="main-content">
+    <header class="page-header container">
+      <h1 class="page-title">Accessibilité numérique et chiens</h1>
+      <p class="page-subtitle">Une histoire tragique. Soyez prévenus !</p>
+    </header>
+
+    <div class="container content-block">
+      <h2>Pourquoi les chiens ne portent pas de lunettes et n’utilisent pas Internet ?</h2>
+      <p>C’est l’aube des temps, un site internet vient tout juste d’être créé. Un chien est assis à un bureau, son ordinateur portable devant lui, il porte des lunettes. Les lunettes ne sont pas correctrices, il veut juste se sentir aussi intelligent qu’il l’est réellement.</p>
+      <p>Le chien essaie de remplir un formulaire. Il est bloqué. Un champ contient une erreur, mais il ne sait pas lequel. Le champ en erreur est indiqué uniquement par un changement de couleur, en rouge. Moi, je le sais, parce que j’ai inventé cette histoire. Mais le pauvre chien, lui, ne le sait pas. Il lutte. Il ne sait pas quoi faire. Il est complètement bloqué. Tous les chiens viennent l’aider, aucun n’y arrive. Les chiens ne voient pas la couleur rouge. Il lui aurait fallu un indicateur visuel supplémentaire pour comprendre que sa saisie était incorrecte.</p>
+      <p>Le chien décide alors d’abandonner, de ne plus jamais aller sur un site internet. Il ne se sent plus intelligent, les lunettes ne lui vont plus, il arrête de les porter. Par solidarité, tous les chiens arrêtent eux aussi d’utiliser Internet.</p>
+      <p>Pouvez-vous imaginer si les humains devaient vivre ça à chaque fois qu’ils remplissent un champ ? La catastrophe ! Enfin..</p>
+
+      <h3 class="content-title content-padding">Critères concernés</h3>
+
+      <h4 class="page-subtitle content-padding" id="rgaa">RGAA</h4>
+        
+        <ul class="content-padding" aria-labelledby="rgaa">
+          <li>RGAA 3.1 : Dans chaque page web, l’information ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée ?</li>
+          <li>RGAA 11.10 : Dans chaque formulaire, le contrôle de saisie est-il utilisé de manière pertinente (hors cas particuliers) ?</li>
+        </ul>
+
+      <h4 class="page-subtitle content-padding" id="wcag">WCAG</h4>
+        
+        <ul class="content-padding" aria-labelledby="wcag">
+          <li>WCAG 1.4.1 : Utilisation de la couleur (Niveau A)</li>
+          <li>WCAG 3.3.1 : Identification des erreurs (Niveau A)</li>
+        </ul> 
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Beb.</p>
+    </div>
+  </footer>
+</body>
+</html>

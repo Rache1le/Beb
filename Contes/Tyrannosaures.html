@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyrannosaure | Contes | Beb</title>
+  <!-- Linking to the external stylesheet in the css folder -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- WCAG 2.2 Essential: Skip to main content for keyboard users -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <!-- Accessible logo identity -->
+      <div class="logotext">
+        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a>
+        <p class="page-subtitle">par Rachelle</p>
+      </div>
+      
+      <nav role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="wiki.html" class="nav-link">Wiki</a></li>
+          <li><a href="resources.html" class="nav-link">Ressources</a></li>
+          <li><a href="opinions.html" class="nav-link">Avis</a></li>
+          <li><a href="stories.html" class="nav-link">Contes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main role="main" id="main-content" class="main-content">
+    <header class="page-header container">
+      <h1 class="page-title">Accessibilité numérique et tyrannosaure</h1>
+      <p class="page-subtitle">Une histoire tragique. Soyez prévenus !</p>
+    </header>
+
+    <div class="container content-block">
+      <h2>Pourquoi les tyrannosaures ont disparu ?</h2>
+      <p>Comme vous le savez peut-être, les kangourous et les tyrannosaures utilisent un clavier sur leur téléphone, car leurs bras sont trop courts et ils ne peuvent pas bien voir l’écran s’ils tiennent le téléphone à la main. Ils doivent le mettre un peu plus loin et taper au clavier. </p>
+      <p>Lors de la création de l’application, l’équipe a oublié que les kangourous et les tyrannosaures existaient. Ils n’avaient jamais rencontré de tyrannosaures et ne savaient pas que les kangourous utilisaient Internet.</p>
+      <p> Une erreur honnête, ça arrive. Évidemment, ils n'avaient pas rencontré tous les utilisateurs de l’appli et n’étaient pas allés à la session de sensibilisation à l’accessibilité numérique (oui, je sais, j’abuse un peu avec ma métaphore).</p>
+      <p>Un tyrannosaure se connecta sur l’application de rencontre et tomba sur le profil de la plus belle kangourou, un match plutôt improbable, je vous l’accorde. Comme le veut la tradition, il devait swiper à droite.</p>
+      <p>Mais comme il utilisait un clavier, il essaya encore et encore sans jamais atteindre le bouton qui simule le swipe. Encore pire, il ne voyait même pas le focus à l’écran et était complètement perdu. En essayant de se repérer sur l’application, il se déconnecta par erreur.</p>
+      <p>La kangourou, elle, ne pouvait pas swiper non plus. Déçue, elle supprima son compte. Le tyrannosaure  ne retrouva jamais son profil. Personne n’avait pensé à la vie amoureuse du tyrannosaure. Déprimé, il promit de ne jamais oublier son kangourou. Il ne se reproduisit jamais, et l’espèce disparut avec lui.</p>
+      <p>Pouvez-vous imaginer que des humains soient privés de l’amour simplement parce qu’ils utilisent un clavier ? Les cœurs brisés ! Enfin…</p>
+
+
+      <h3 class="content-title content-padding">Critères concernés</h3>
+
+      <h4 class="page-subtitle content-padding" id="rgaa">RGAA</h4>
+        
+        <ul class="content-padding" aria-labelledby="rgaa">
+          <li>RGAA 7.3 : Chaque script est-il contrôlable par le clavier et par tout dispositif de pointage (hors cas particuliers) ?</li>
+          <li>RGAA 10.7 : Dans chaque page web, pour chaque élément recevant le focus, la prise de focus est-elle visible ?</li>
+        </ul>
+
+      <h4 class="page-subtitle content-padding" id="wcag">WCAG</h4>
+        
+        <ul class="content-padding" aria-labelledby="wcag">
+          <li>WCAG 2.1.1 : Clavier (Niveau A)</li>
+          <li>WCAG 2.4.7 : Visibilité du focus (Niveau AA)</li>
+          <li>WCAG 2.1.3 : Clavier (Pas d'exception) (Niveau AAA)</li>
+        </ul> 
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Beb.</p>
+    </div>
+  </footer>
+</body>
+</html>
