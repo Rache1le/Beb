@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Role Wiki | Beb</title>
+  <title>Wiki | Beb</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container header-wrap">
-      <a href="index.html" class="logo" aria-label="Beb Homepage"><span>Beb</span>.</a>
-      <nav aria-label="Main Site Navigation">
+      <!-- Accessible logo identity -->
+      <div class="logotext">
+        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a>
+        <span class="page-subtitle">par Rachelle</span></p>
+      </div>
+      
+      <nav role="navigation" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="wiki.html" class="nav-link" aria-current="page">The Role Wiki</a></li>
-          <li><a href="resources.html" class="nav-link">Curated Stash</a></li>
-          <li><a href="opinions.html" class="nav-link">Hot Takes</a></li>
-          <li><a href="stories.html" class="nav-link">Tales & Workshops</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contes.html" class="nav-link">Contes</a></li>
+          <li><a href="wiki.html" class="nav-link">Wiki</a></li>
+          <li><a href="ressources.html" class="nav-link">Ressources</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main-content" class="main-content">
-    <header class="page-header container">
-      <h1 class="page-title">The Role Wiki</h1>
-      <p class="page-subtitle">Accessibility isn't a one-person job. Find your lane and own it.</p>
-    </header>
+    <div class="page-header container">
+      <h1 class="page-title">Wiki</h1>
+      <p class="page-subtitle">Ici vous trouverez des spécifications et des guides pour l'accessibilité numérique. (À venir)</p>
+    </div>
 
-    <div class="container beb-grid">
+    <!-- <div class="container beb-grid">
       <article class="card">
         <h2>For Designers</h2>
         <p>Aesthetics and inclusion are not enemies. Learn how to map out color contrast, focus states, and logical reading orders before a single line of code is written.</p>
@@ -47,13 +52,24 @@
         <p>Words matter. Master the art of writing descriptive alt text, clear link labels, and content that reads naturally for cognitive accessibility.</p>
         <a href="#">View Copywriter Guide</a>
       </article>
-    </div>
+    </div>-->
   </main>
 
-  <footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
     <div class="container footer-wrap">
-      <p>&copy; 2026 Beb.</p>
+      <div>
+        <p>Site Personnel</p>
+      </div>
+        <div class="logotext">
+        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a> par Rachelle</p>
+      </div>
+      <nav aria-label="Footer Navigation" role="navigation">
+        <ul class="footer-nav">
+          <li><a href="https://www.linkedin.com/in/rachelle-lattouf/">Compte LinkedIn</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
+
 </body>
 </html>

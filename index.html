@@ -17,15 +17,15 @@
       <!-- Accessible logo identity -->
       <div class="logotext">
         <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a>
-        <p class="page-subtitle">par Rachelle</p>
+        <span class="page-subtitle"> par Rachelle</span></p>
       </div>
       
       <nav role="navigation" aria-label="Navigation principale">
         <ul class="nav-list">
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contes.html" class="nav-link">Contes</a></li>
           <li><a href="wiki.html" class="nav-link">Wiki</a></li>
-          <li><a href="resources.html" class="nav-link">Ressources</a></li>
-          <li><a href="opinions.html" class="nav-link">Avis</a></li>
-          <li><a href="stories.html" class="nav-link">Contes</a></li>
+          <li><a href="ressources.html" class="nav-link">Ressources</a></li>
         </ul>
       </nav>
     </div>
@@ -37,22 +37,21 @@
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <!-- Reusing the page-header styling from our CSS for consistency -->
-        <header class="page-header" style="border-bottom: none; padding-bottom: 0;">
+        <div class="page-header" style="border-bottom: none; padding-bottom: 0;">
           <h1 id="hero-heading" class="page-title" style="max-width: 800px; font-size: 3.5rem;">
             Bienvenue à <em style="font-style: italic; color: var(--color-accent);">Beb</em>.
           </h1>
           <p class="page-subtitle" style="max-width: 650px; font-size: 1.35rem; margin-top: 1.5rem;">
             Un site ou je partage toutes mes idees, mes connaissances, mes ressources et mes opinions parce que, apparemment, parler de l'accessibilité numérique avec tes amis qui ne sont pas dans le domaine n'est pas si simple. Qui aurait cru ??!
           </p>
-        </header>
+        </div>
       </div>
     </section>
 
     <!-- Content Hub Grid -->
     <section class="container" style="padding-top: 2rem;" aria-labelledby="hub-heading">
       <h2 id="hub-heading" style="font-size: 2.25rem; margin-bottom: 2.5rem; display: flex; align-items: center; gap: 1rem;">
-        Explorer les Quartiers
+        Explorer le site
         <span style="flex-grow: 1; height: 1px; background: var(--color-border);" aria-hidden="true"></span>
       </h2>
       
@@ -62,44 +61,44 @@
         <article class="card">
           <div>
             <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Blueprint</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Role-Based Wiki</h3>
-            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Tailored accessibility mandates minus the dry jargon. Whether you're a pixel-pushing designer or a production-level engineer, find your specific lane here.</p>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Wiki</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Mes connaissances et ressources par métier sur l'accessibilité numérique.</p>
           </div>
           <!-- Button links directly to the new wiki page -->
-          <a href="wiki.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Enter Wiki</a>
+          <a href="wiki.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Lire le wiki</a>
         </article>
 
-        <!-- Part 2: Resources -->
+        <!-- Part 2: Blog -->
         <article class="card">
           <div>
             <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Stash</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Curated Treasures</h3>
-            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">A highly opinionated directory of tools, color contrast crunchers, articles, and bookmarklets that make building an inclusive web actually fun.</p>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Blog</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">La partie blog, mais vraiment mes opinions, pensées et plaintes.</p>
           </div>
           <!-- Button links directly to the new resources page -->
-          <a href="resources.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Grab Tools</a>
+          <a href="blog.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Lire le blog</a>
         </article>
 
-        <!-- Part 3: Opinions -->
+        <!-- Part 3: Ressources -->
         <article class="card">
           <div>
             <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Runway</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Unfiltered Thoughts</h3>
-            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">An ongoing analysis of modern web aesthetics. We love beautiful things, but if your interface isn't navigable by keyboard, we're calling it out.</p>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Ressources</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Quelques ressources que je trouve utiles ou intéressantes.</p>
           </div>
-          <!-- Button links directly to the new opinions page -->
-          <a href="opinions.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Read Takes</a>
+          <!-- Button links directly to the new resources page -->
+          <a href="ressources.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Voir les ressources</a>
         </article>
 
         <!-- Part 4: Stories & Future Games -->
         <article class="card">
           <div>
             <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">The Theater</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">A11y Tales & Activities</h3>
-            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Immersive, whimsical short stories framing digital barriers as physical adventures. Soon expanding into tabletop workshop modules and interactive games.</p>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Contes</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Des contes qui illustrent les défis de l'accessibilité numérique. Un peu satiriques parfois.</p>
           </div>
           <!-- Button links directly to the new stories page -->
-          <a href="stories.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Explore Lore</a>
+          <a href="contes.html" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Lire les contes</a>
         </article>
 
       </div>
@@ -110,12 +109,14 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-wrap">
       <div>
-        <p> 2026 Beb.</p>
+        <p>Site Personnel</p>
+      </div>
+        <div class="logotext">
+        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a> par Rachelle</p>
       </div>
       <nav aria-label="Footer Navigation" role="navigation">
         <ul class="footer-nav">
-          <li><a href="#accessibility-statement">Accessibilité</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/rachelle-lattouf/">Compte LinkedIn</a></li>
         </ul>
       </nav>
     </div>
