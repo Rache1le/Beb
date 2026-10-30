@@ -9,28 +9,7 @@
 </head>
 <body>
 
-  <!-- WCAG 2.2 Essential: Skip to main content for keyboard users -->
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
-  <header class="site-header" role="banner">
-    <div class="container header-wrap">
-      <!-- Accessible logo identity -->
-      <div class="logotext">
-        <a href="../index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span style="color: var(--color-accent-neon)">Beb</span>.</a>
-        <span class="page-subtitle">par Rachelle</span></p>
-      </div>
-      
-      <nav role="navigation" aria-label="Navigation principale">
-        <ul class="nav-list">
-          <li><a href="../blog.html" class="nav-link">Blog</a></li>
-          <li><a href="../contes.html" class="nav-link">Contes</a></li>
-          <li><a href="../wiki.html" class="nav-link">Wiki</a></li>
-          <li><a href="../ressources.html" class="nav-link">Ressources</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <div id="header"></div>
 
   <main role="main" id="main-content" class="main-content">
     <header class="page-header container">
@@ -68,21 +47,11 @@
     </div>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-wrap">
-      <div>
-        <p>Site Personnel</p>
-      </div>
-        <div class="logotext">
-        <a href="../index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a> par Rachelle</p>
-      </div>
-      <nav aria-label="Footer Navigation" role="navigation">
-        <ul class="footer-nav">
-          <li><a href="https://www.linkedin.com/in/rachelle-lattouf/">Compte LinkedIn</a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+  <div id="footer"></div>
+
+  <script src="../js/components.js"
+    data-root=".."
+    defer></script>
 
 </body>
 </html>

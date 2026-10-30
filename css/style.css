@@ -190,6 +190,10 @@ a:hover {
   gap: 2.5rem;
 }
 
+.start-grid {
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 768px) {
   .beb-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -7,69 +7,78 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-wrap">
-      <!-- Accessible logo identity -->
-      <div class="logotext">
-        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span>Beb</span>.</a>
-        <span class="page-subtitle">par Rachelle</span></p>
-      </div>
-      
-      <nav role="navigation" aria-label="Navigation principale">
-        <ul class="nav-list">
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="contes.html" class="nav-link">Contes</a></li>
-          <li><a href="wiki.html" class="nav-link">Wiki</a></li>
-          <li><a href="ressources.html" class="nav-link">Ressources</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="header"></div>
 
   <main id="main-content" class="main-content">
+
     <div class="page-header container">
       <h1 class="page-title">Wiki</h1>
       <p class="page-subtitle">Ici vous trouverez des spécifications et des guides pour l'accessibilité numérique. (À venir)</p>
     </div>
 
-    <!-- <div class="container beb-grid">
-      <article class="card">
-        <h2>For Designers</h2>
-        <p>Aesthetics and inclusion are not enemies. Learn how to map out color contrast, focus states, and logical reading orders before a single line of code is written.</p>
-        <a href="#">View Designer Guide</a>
-      </article>
+    <section class="container" style="padding-top: 2rem;" aria-labelledby="hub-heading">
 
+    <div class="start-grid">
       <article class="card">
-        <h2>For Developers</h2>
-        <p>Semantic HTML is your best friend. Dive into ARIA roles, keyboard trapping prevention, and building robust components that screen readers love.</p>
-        <a href="#">View Developer Guide</a>
+        <div>
+          <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">Generalités</div>
+          <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Comprendre l'accessibilité numérique</h3>
+          <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Pourquoi et pour qui faire l'accessibilité ?</p>
+        </div>
+        <a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Que l'aventure commence !</a>
       </article>
-      
-      <article class="card">
-        <h2>For Copywriters</h2>
-        <p>Words matter. Master the art of writing descriptive alt text, clear link labels, and content that reads naturally for cognitive accessibility.</p>
-        <a href="#">View Copywriter Guide</a>
-      </article>
-    </div>-->
+    </div>
+
+    <div class="beb-grid">
+
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">Design</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Les Recommandations pour un Design Accessible</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Un guide pour créer des designs accessibles et inclusifs. Les critères à respecter, comment et pourquoi aller plus loin. De la conformité aux bonnes pratiques.</p>
+          </div>
+          <a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Le guide pour les designers</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">Dev</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Les Recommandations pour un Code Accessible</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Un guide pour créer des interfaces accessibles et inclusives. Les critères à respecter, comment et pourquoi aller plus loin. De la conformité aux bonnes pratiques.</p>
+          </div>
+          <a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Le guide pour les devs</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">PO/PM</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Les Recommandations pour un Projet Accessible</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Un guide pour créer des produits accessibles.</p>
+          </div>
+          <a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Le guide pour les PO/PM, oui, ça vous concerne aussi.</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-accent); font-weight: 700; margin-bottom: 1rem;">QA</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Comment intégrer l'accessibilité dans le projet et comment tester ?</h3>
+            <p style="color: var(--color-muted); margin-bottom: 2rem; font-size: 1.05rem;">Un guide pour tester l'accessibilité d'une façon continue.</p>
+          </div>
+          <a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; background-color: var(--color-text); color: var(--color-bg); text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; border: 2px solid var(--color-text); align-self: flex-start; transition: background-color 0.2s ease, color 0.2s ease;" onmouseover="this.style.backgroundColor='var(--color-accent)'; this.style.borderColor='var(--color-accent)'; this.style.color='white';" onmouseout="this.style.backgroundColor='var(--color-text)'; this.style.borderColor='var(--color-text)'; this.style.color='var(--color-bg)';">Le guide pour les QA</a>
+        </article>
+    
+      </div>
+
+    </section>
+
   </main>
 
-<footer class="site-footer" role="contentinfo">
-    <div class="container footer-wrap">
-      <div>
-        <p>Site Personnel</p>
-      </div>
-        <div class="logotext">
-        <a href="index.html" class="logo" aria-label="Beb retour à la page d'accueil"><span style="color: var(--color-accent-neon)">Beb</span>.</a> par Rachelle</p>
-      </div>
-      <nav aria-label="Footer Navigation" role="navigation">
-        <ul class="footer-nav">
-          <li><a href="https://www.linkedin.com/in/rachelle-lattouf/">Compte LinkedIn</a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+  <div id="footer"></div>
+
+  <script src="./js/components.js"
+    data-root="."
+    defer></script>
 
 </body>
 </html>
